@@ -19,6 +19,7 @@ package com.ibm.mq.demo;
 import java.util.logging.*;
 import java.util.Scanner;
 
+import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
@@ -34,8 +35,7 @@ public class Reseller
    *
    * @param args
    */
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) throws JMSException {
     initialiseLogging();
     logger.info("Reseller Application is starting");
 
@@ -60,6 +60,9 @@ public class Reseller
             Message message = ticketSubscriber.waitForPublish();
             if (message != null) {
               logger.fine("Tickets have been made available");
+              // Avoids an illegal reflective access operation caused by jaxb dependencies
+              final String key = "org.glassfish.jaxb.runtime.v2.bytecode.ClassTailor.noOptimize";
+              System.setProperty(key, "true");
 
               // Challenge : Processes a publication
               int numToReserve = howMany(message);

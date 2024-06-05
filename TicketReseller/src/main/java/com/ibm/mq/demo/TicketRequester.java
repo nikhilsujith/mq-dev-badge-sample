@@ -85,13 +85,23 @@ public class TicketRequester
         System.out.println("Your code to put a message onto the purchase queue will go here");
         // The following code needs to be added here
         logger.finest("Challenge Add code to : Set the JMS Correlation ID");
+        requestMessage.setJMSCorrelationID(correlationID);
+
         logger.finest("Challenge Add code to : Set the JMS Expiration");
+        requestMessage.setJMSExpiration(900000);
 
         logger.finest("Sending request to purchase tickets");
+          // Create the purchase Queue
 
-        // Create the purchase Queue
-        // Create a MessageProducer
-        // Send the Request
+        Queue requestQueue = session.createQueue(PURCHASE_QUEUE);
+          // Create a MessageProducer
+
+        MessageProducer producer = session.createProducer(requestQueue);
+
+          // Send the Request
+        producer.send(requestMessage);
+
+
 
         logger.finest("Sent request for tickets");
        }
@@ -122,23 +132,28 @@ public class TicketRequester
       boolean success = false;
       Message responseMsg = null;
 
-      //try {
+      try {
         logger.finest("Performing receive on confirmation queue");
         System.out.println("Challenge : our reseller application does a get from this queue");
         System.out.println("Your code to receive a message from the confirmation queue will go here");
         // The following code needs to be added here
         logger.finest("Challenge Add code to : Create Confirmation Queue");
+        Queue confirmationQueue = session.createQueue(CONFIRMATION_QUEUE);
+
         logger.finest("Challenge Add code to : Create a Consumer");
+        MessageConsumer confirmationConsumer = session.createConsumer(confirmationQueue);
+
         logger.finest("Challenge Add code to : Receive a Message");
+        responseMsg = confirmationConsumer.receive(30000);
 
         if (responseMsg != null) {
           success = isAccepted(responseMsg);
         }
-      //}
-      //catch (JMSException e) {
-      //  logger.warning("Error connecting to confirmation queue");
-      //  e.printStackTrace();
-      //}
+      }
+      catch (JMSException e) {
+        logger.warning("Error connecting to confirmation queue");
+        e.printStackTrace();
+      }
 
       return success;
     }

@@ -1,0 +1,148 @@
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[Manager       ]-[initialiseLogging  ]: Logger initialised 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:05]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Creating Events 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location 'Royal Albert Hall' at time '19:30' at date '2019-03-12' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '0' with name of 'European Summit' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: European Summit ID=0 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location '99 Columbia road' at time '21:30' at date '2020-09-19' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '1' with name of 'Glasto' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: Glasto ID=1 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location 'Hursley' at time '08:00' at date '2020-09-11' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '2' with name of 'IBM Think' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: IBM Think ID=2 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location 'KOKO' at time '14:30' at date '2020-07-01' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '3' with name of 'Beta Workshop' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: Beta Workshop ID=3 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location 'Trent Country Park' at time '10:00' at date '2020-07-27' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '4' with name of 'Share' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: Share ID=4 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createVenue        ]: Venue created at location 'The O2' at time '09:00' at date '2020-02-07' 
+[2024-06-04 12:48:05]-[Main   ]-[FINEST ]-[EventManager  ]-[createBookableEvent]: Bookable event created with eventID '5' with name of 'MQTC' 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EventManager  ]-[createEventFromJson]: Event Created: MQTC ID=5 
+[2024-06-04 12:48:05]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: New total of 6 events 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EnvSetter     ]-[createFactory      ]: Creating connection factory 
+[2024-06-04 12:48:05]-[Main   ]-[FINER  ]-[EnvSetter     ]-[createFactory      ]: Connection factory has been created 
+[2024-06-04 12:48:05]-[Main   ]-[FINE   ]-[EnvSetter     ]-[setJMSProperties   ]: Setting connection factory properties 
+[2024-06-04 12:48:05]-[Main   ]-[FINER  ]-[EnvSetter     ]-[setJMSProperties   ]: Connection factory properties have been set 
+[2024-06-04 12:48:05]-[Main   ]-[FINER  ]-[EnvSetter     ]-[connect            ]: Creating connection session 
+[2024-06-04 12:48:06]-[Main   ]-[FINER  ]-[EnvSetter     ]-[connect            ]: JMS session connection initialised successfully 
+[2024-06-04 12:48:06]-[Main   ]-[FINER  ]-[AdvertManager ]-[connect            ]: Connection for advert manager has been created 
+[2024-06-04 12:48:06]-[Cashier]-[FINE   ]-[EnvSetter     ]-[createFactory      ]: Creating connection factory 
+[2024-06-04 12:48:06]-[Cashier]-[FINER  ]-[EnvSetter     ]-[createFactory      ]: Connection factory has been created 
+[2024-06-04 12:48:06]-[Cashier]-[FINE   ]-[EnvSetter     ]-[setJMSProperties   ]: Setting connection factory properties 
+[2024-06-04 12:48:06]-[Cashier]-[FINER  ]-[EnvSetter     ]-[setJMSProperties   ]: Connection factory properties have been set 
+[2024-06-04 12:48:06]-[Cashier]-[FINER  ]-[EnvSetter     ]-[connect            ]: Creating connection session 
+[2024-06-04 12:48:06]-[Cashier]-[FINER  ]-[EnvSetter     ]-[connect            ]: JMS session connection initialised successfully 
+[2024-06-04 12:48:06]-[Cashier]-[FINER  ]-[Cashier       ]-[connect            ]: Connection for cashier has been created 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Starting to listen for ticket requests 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Received message 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Message received: 
+  JMSMessage class: jms_text
+  JMSType:          null
+  JMSDeliveryMode:  2
+  JMSDeliveryDelay: 0
+  JMSDeliveryTime:  0
+  JMSExpiration:    0
+  JMSPriority:      4
+  JMSMessageID:     ID:414d5120514d31202020202020202020c52f5f6606360040
+  JMSTimestamp:     1717522828420
+  JMSCorrelationID: 33948421-ad73-4794-bf71-c75395aca614
+  JMSDestination:   queue:///purchase
+  JMSReplyTo:       null
+  JMSRedelivered:   false
+    JMSXAppID: com.ibm.mq.demo.Reseller    
+    JMSXDeliveryCount: 1
+    JMSXUserID: app         
+    JMS_IBM_Character_Set: UTF-8
+    JMS_IBM_Encoding: 273
+    JMS_IBM_Format: MQSTR   
+    JMS_IBM_MsgType: 8
+    JMS_IBM_PutApplType: 28
+    JMS_IBM_PutDate: 20240604
+    JMS_IBM_PutTime: 17402842
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<requestTickets>
+    <eventID>2</eventID>
+   ... 
+[2024-06-04 12:48:06]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: Processing request for event: IBM Think 
+[2024-06-04 12:48:06]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: Number requested was: 10 
+[2024-06-04 12:48:06]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: There would be 620 tickets left 
+[2024-06-04 12:48:06]-[Cashier]-[FINEST ]-[EventManager  ]-[eventsToJSON       ]: Event: IBM Think is being modified 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[StorageManager]-[saveNewData        ]: Saving data 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[EventManager  ]-[subtractTickets    ]: There are now 620 for event: IBM Think 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[Cashier       ]-[processMessage     ]: Creating accepted response 
+[2024-06-04 12:48:06]-[Cashier]-[INFO   ]-[Cashier       ]-[processMessage     ]: Sent response 
+[2024-06-04 12:48:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:48:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'European Summit' has been published 
+[2024-06-04 12:48:07]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:48:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:48:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'Glasto' has been published 
+[2024-06-04 12:48:37]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:48:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Received message 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Message received: 
+  JMSMessage class: jms_text
+  JMSType:          null
+  JMSDeliveryMode:  2
+  JMSDeliveryDelay: 0
+  JMSDeliveryTime:  0
+  JMSExpiration:    0
+  JMSPriority:      4
+  JMSMessageID:     ID:414d5120514d31202020202020202020c52f5f6604400040
+  JMSTimestamp:     1717523321907
+  JMSCorrelationID: e925bc0b-ac90-4c6f-9e71-8b318b227972
+  JMSDestination:   queue:///purchase
+  JMSReplyTo:       null
+  JMSRedelivered:   false
+    JMSXAppID: com.ibm.mq.demo.Reseller    
+    JMSXDeliveryCount: 1
+    JMSXUserID: app         
+    JMS_IBM_Character_Set: UTF-8
+    JMS_IBM_Encoding: 273
+    JMS_IBM_Format: MQSTR   
+    JMS_IBM_MsgType: 8
+    JMS_IBM_PutApplType: 28
+    JMS_IBM_PutDate: 20240604
+    JMS_IBM_PutTime: 17484191
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<requestTickets>
+    <eventID>1</eventID>
+   ... 
+[2024-06-04 12:48:41]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: Processing request for event: Glasto 
+[2024-06-04 12:48:41]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: Number requested was: 1000 
+[2024-06-04 12:48:41]-[Cashier]-[FINE   ]-[EventManager  ]-[subtractTickets    ]: There would be 18990 tickets left 
+[2024-06-04 12:48:41]-[Cashier]-[FINEST ]-[EventManager  ]-[eventsToJSON       ]: Event: Glasto is being modified 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[StorageManager]-[saveNewData        ]: Saving data 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[EventManager  ]-[subtractTickets    ]: There are now 18990 for event: Glasto 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[Cashier       ]-[processMessage     ]: Creating accepted response 
+[2024-06-04 12:48:41]-[Cashier]-[INFO   ]-[Cashier       ]-[processMessage     ]: Sent response 
+[2024-06-04 12:49:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:49:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:49:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'IBM Think' has been published 
+[2024-06-04 12:49:07]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:49:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:49:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:49:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:49:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'Beta Workshop' has been published 
+[2024-06-04 12:49:37]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:49:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:50:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:50:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:50:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'Share' has been published 
+[2024-06-04 12:50:07]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:50:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:50:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:50:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Publishing advert... 
+[2024-06-04 12:50:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Advert for 'MQTC' has been published 
+[2024-06-04 12:50:37]-[Main   ]-[FINE   ]-[Manager       ]-[main               ]: Waiting for 30 seconds before publishing next advert 
+[2024-06-04 12:50:37]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: ----- 
+[2024-06-04 12:51:07]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Closing connections and stopping threads 
+[2024-06-04 12:51:07]-[Main   ]-[FINEST ]-[Cashier       ]-[close              ]: Close flag set for cashier to signal for the connections to close 
+[2024-06-04 12:51:12]-[Cashier]-[INFO   ]-[Cashier       ]-[waitForRequest     ]: Stopped listening to responses 
+[2024-06-04 12:51:12]-[Main   ]-[FINER  ]-[Cashier       ]-[closeConnection    ]: Connections for cashier have closed 
+[2024-06-04 12:51:12]-[Main   ]-[FINER  ]-[EnvSetter     ]-[closeConnections   ]: Attempting to close all open connections for EnvSetter 
+[2024-06-04 12:51:12]-[Main   ]-[INFO   ]-[Manager       ]-[main               ]: Closed all connections 
